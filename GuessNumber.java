@@ -15,10 +15,10 @@ public class GuessNumber{
 	
 	public GuessNumber() {
 		//generate a random number between 1 - 10
-		int r1 = (int) Math.random(); //generate random number
-		int r2 = r1 * 10;//[0....9] range
+		double r1 = Math.random(); //generate random number
+		double r2 = r1 * 10;//[0....9] range
 		System.out.println("r2: " + r2);
-		int r3 = r2 + 1;//[1....10]
+		double r3 = r2 + 1;//[1....10]
 		System.out.println("r3: " + r3);
 		
 		secret = (int) r3;
@@ -31,6 +31,7 @@ public class GuessNumber{
 	public void setGuess(int n) {
 		guess = n;
 	}
+	//declare the processing method
 	public void compute() {
 		if(guess == secret) {
 			message = "congrats";

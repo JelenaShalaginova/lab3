@@ -1,6 +1,10 @@
 package lab3;
 import java.util.*;
-
+/**
+GuessApp 
+	uses the instantiable class GuessNumber
+	allows the user to guess a number 1 time
+*/
 public class GuessApp {
 
 	public static void main(String[] args) {
@@ -33,7 +37,7 @@ public class GuessApp {
 		
 		
 		//retrieve the secret number 
-		int s = checker.getSecret();
+		double s = checker.getSecret();
 		System.out.println("Secret number is: " + s);
 		
 		
